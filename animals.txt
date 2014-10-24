@@ -1,0 +1,24 @@
+Urban
+1 30 Dog
+31 65 Cat
+66 100 Mouse
+
+Rural
+1 30 Cow
+31 65 Pig
+66 100 Chicken
+
+Wild
+1 30 Wolf
+31 65 Coyote
+66 100 Fox
+
+Wild Birds
+1 30 Sparrow
+31 65 Robin
+66 100 BlueJay
+
+Zoo
+1 30 Lion
+31 65 Tiger
+66 100 Leopard

@@ -1,0 +1,224 @@
+Dog
+5 60
++++
+2 8 0 0 0 0 0 3
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Teeth attack:1D6 5
+Claws attack:1D4 5
+Advance_Smell power 5
+
+Cat
+3 70
++++
+0 2 0 0 3 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Teeth attack:1D8 5
+Claws attack:1D8 5
+Claws attack:1D10 10
+Nightvision power 5
+
+Cow
+16 0
++++
+0 0 0 2 0 0 0 2
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Horns attack:2D12 5
+Bull power:SDC15 5
+
+Wolf
+6 50
++++
+4 2 2 0 2 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Teeth attack:1D8 5
+Claws attack:1D6 5
+Teeth attack:1D10 10
+Advanced_Smell power 5
+
+Coyote
+5 55
++++
+4 2 2 0 2 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Teeth attack:1D8 5
+Claws attack:1D6 5
+Teeth attack:1D10 10
+Advanced_Smell power 5
+
+Fox
+3 60
++++
+2 8 0 0 0 0 0 3
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Teeth attack:1D6 5
+Teeth attack:1D8 10
+Advanced_Smell power 5
+Advanced_Hearing power 5
+
+Sparrow
+1 70
++++
+0 0 0 0 0 0 0 5
+===
+Hands_Partial appear 5 Hands_Full appear 10 Extra_Limbs_W_Hands appear 20
+Biped_Full appear 0
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Glide power 10
+Flight power 20
+
+Robin
+1 70
++++
+0 0 0 0 0 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10 Extra_Limbs_W_Hands appear 20
+Biped_Full appear 0
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Glide power 10
+Flight power 20
+
+BlueJay
+1 70
++++
+0 0 0 0 0 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10 Extra_Limbs_W_Hands appear 20
+Biped_Full appear 0
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Glide power 10
+Flight power 20
+
+Lion
+14 10
++++
+0 0 0 2 6 2 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Advanced_Smell power 5
+Nightvision power 5
+Swimming power 10
+Claws attack:2D6 15
+Claws attack:1D8 10
+Teeth attack:1D8 5
+Teeth attack:2D6 10
+
+
+Tiger
+15 5
++++
+0 0 0 4 6 2 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Advanced_Smell power 5
+Nightvision power 5
+Swimming power 10
+Claws attack:2D6 15
+Claws attack:1D8 10
+Teeth attack:1D8 5
+Teeth attack:2D6 10
+
+Leopard
+12 20
++++
+0 0 0 2 6 2 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Advanced_Smell power 5
+Nightvision power 5
+Swimming power 10
+Claws attack:2D6 15
+Claws attack:1D8 10
+Teeth attack:1D8 5
+Teeth attack:2D6 10
+
+Mouse
+1 80
++++
+2 1 0 0 1 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Teeth attack:1D4 10
+Claws attack:1D6 5
+Digging power 10
+Advanced_Hearing power 5
+
+Pig
+12 25
++++
+3 1 1 0 0 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Partial appear 5 Biped_Full appear 10
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Advanced_Hearing power 5
+Skin power:SDC10 5
+
+Chicken
+3 65
++++
+0 0 0 0 0 0 0 0
+===
+Hands_Partial appear 5 Hands_Full appear 10
+Biped_Full appear 0
+Speech_Partial appear 5 Speech_Full appear 10
+Looks_Partial appear 5 Looks_Full appear 10
+***
+Glide power 10
+Ultra-violet_Vision power 20
+
+
+

@@ -2,6 +2,11 @@ def roll_percentage
   (rand(100) + 1)
 end
 
+def roll_3_6
+  roll = 0
+  3.times {roll += (rand(6) + 1)}
+end
+
 def percentage_result(hash, roll)
   hash.keys.each do |key|
     if roll.between?(key[0], key[1])
@@ -25,7 +30,7 @@ def generate_base_stats
   }
 
   base_stats.keys.each do |stat|
-    3.times {base_stats[stat] += (rand(6) + 1)}
+    base_stats[stat] += roll_3_6
     base_stats[stat] += (rand(6) + 1) if base_stats[stat] >= 16
   end
   base_stats[:HP] = base_stats[:PE] + (rand(6) + 1)
@@ -33,7 +38,6 @@ def generate_base_stats
 end
 
 def generate_animal
-
   animal_type = {
     [1, 35] => 'Urban',
     [36, 50] => 'Rural',
@@ -62,9 +66,25 @@ def generate_mutation
     [15, 60] => 'Accidental Encounter',
     [61, 100] => 'Deliberate Experimentation'
   }
-  deliberate_experimentation = {
-    [1, 10] => 'Adopted'
-  }
+  result = percentage_result(mutation_hash, roll_percentage)
+  if result == 'Deliberate Experimentation'
+    deliberate_experimentation = {
+      [1, 10] => ['Adopted', 2, 10, roll_3_6 * 1000],
+      [11, 20] => ['Pet, happy', 0, 14],
+      [21, 30] => ['Pet, unhappy', 0, 0, 0],
+      [31, 40] => ['Experiment, unhappy', 0, 18, 2.times(1 + rand(6)) * 500],
+      [41, 50] => ['Experiment, very unhappy', 0, 0, 0],
+      [51, 60] => ['Educated Normal', 2, 8, 2.times(1 + rand(6)) * 2000],
+      [61, 70] => ['Rescued', 0, 7, 2.times(1 + rand(6)) * 200],
+      [71, 80] => ['Specialist, valued', 3, 10, (1 + rand(6)) * 10_000],
+      [81, 90] => ['Specialist, ex-slave', 3, 8, 3.times(3 + rand(6)) * 10_000],
+      [91, 100] => ['Assassin', 0, 8, (1 + rand(6)) * 20_000]
+    }
+    result = percentage_result(deliberate_experimentation, roll_percentage)
+  end
+  if ['Random Mutation', 'Accidental Encounter', 'Pet, unhappy', 'Experiment, very unhappy'].include? result
+    wild_animal_education = {}
+  end
 end
 
 def get_sl_bio(animal, file)
@@ -118,7 +138,19 @@ def get_bonuses(animal, file)
   found_animal = false
   file.each_line do |line|
     found_animal = true if previous_line == animal
-    return line.strip.split if previous_line == '+++' && found_animal
+    if previous_line == '+++' && found_animal
+      l = line.strip.split
+      return {
+       IQ: l[0].to_i,
+       ME: l[1].to_i,
+       MA: l[2].to_i,
+       PS: l[3].to_i,
+       PP: l[4].to_i,
+       PE: l[5].to_i,
+       PB: l[6].to_i,
+       Spd: l[7].to_i
+      }
+    end
     previous_line = line.strip
   end
 end
@@ -139,10 +171,45 @@ def adjust_for_size(powers, sl)
   (14 - sl).times {powers.push(['sl up', 'sl', 5])} if sl - 8 < 0
   (sl - 10).times {powers.push(['sl down', 'sl', -5])} if sl - 10 > 0
   if sl.between?(8, 10)
-    2.times {final_power_list.push(['sl up', 'sl', 5])}
-    2.times {final_power_list.push(['sl down', 'sl', -5])}
+    2.times {powers.push(['sl up', 'sl', 5])}
+    2.times {powers.push(['sl down', 'sl', -5])}
   end
   powers
+end
+
+def get_size_bonus(sl)
+  size_chart = {
+    1 => {IQ: -8, PS: -12, PE: -4, Spd: 7, SDC: 5},
+    2 => {IQ: -6, PS: -6, PE: -2, Spd: 5, SDC: 10},
+    3 => {IQ: -4, PS: -3, PE:  -1, Spd: 3, SDC: 15},
+    4 => {IQ: -2, PS: -2, PE:  0, Spd: 0, SDC: 20},
+    5 => {IQ: 0, PS: -1, PE: 0, Spd: 0, SDC: 25},
+    6 => {IQ: 0, PS: 0, PE: 0, Spd: 0, SDC: 30},
+    7 => {IQ: 0, PS: 1, PE: 0, Spd: 0, SDC: 30},
+    8 => {IQ: 0, PS: 2, PE: 0, Spd: 0, SDC: 35},
+    9 => {IQ: 0, PS: 3, PE: 1, Spd: 0, SDC: 35},
+    10 => {IQ: 0, PS: 4, PE: 2, Spd: 0, SDC: 35},
+    11 => {IQ: 0, PS: 5, PE: 3, Spd: -1, SDC: 40},
+    12 => {IQ: 0, PS: 6, PE: 4, Spd: -2, SDC: 40},
+    13 => {IQ: 0, PS: 7, PE: 5, Spd: -3, SDC: 45},
+    14 => {IQ: 0, PS: 8, PE: 6, Spd: -4, SDC: 50},
+    15 => {IQ: 0, PS: 9, PE: 7, Spd: -5, SDC: 55},
+    16 => {IQ: 0, PS: 10, PE: 8, Spd: -6, SDC: 60},
+    17 => {IQ: 0, PS: 11, PE: 9, Spd: -7, SDC: 65},
+    18 => {IQ: 0, PS: 12, PE: 10, Spd: -8, SDC: 70},
+    19 => {IQ: 0, PS: 13, PE: 11, Spd: -9, SDC: 75},
+    20 => {IQ: 0, PS: 14, PE: 12, Spd: -10, SDC: 80},
+  }
+  return size_chart[sl]
+end
+
+def apply_bonuses(base_stats, size_bonus, animal_bonus)
+  base_stats.keys.each do |stat|
+    base_stats[stat] += animal_bonus[stat] if animal_bonus[stat]
+    base_stats[stat] += size_bonus[stat] if size_bonus[stat]
+    base_stats[:SDC] = size_bonus[:SDC]
+  end
+  base_stats
 end
 
 def assign_points(points, available_powers, selected_powers)
@@ -171,16 +238,12 @@ def make_character
   sl = sl_bio.shift
   bio = sl_bio.shift
   appearances = get_appearances(animal_type, file)
-  bonuses = get_bonuses(animal_type, file)
+  animal_bonuses = get_bonuses(animal_type, file)
   powers = randomly_remove_dups(get_powers(animal_type, file))
   powers = adjust_for_size(powers, sl)
   powers = assign_points(bio, powers.shuffle, [])
+  size_bonus = get_size_bonus(sl)
+  base_stats = apply_bonuses(base_stats, size_bonus, animal_bonuses)
 end
 
 make_character
-
-
-
-
-
-

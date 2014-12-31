@@ -244,6 +244,9 @@ def make_character
   powers = assign_points(bio, powers.shuffle, [])
   size_bonus = get_size_bonus(sl)
   base_stats = apply_bonuses(base_stats, size_bonus, animal_bonuses)
+  puts animal_type
+  puts base_stats
+  puts powers
 end
 
 make_character

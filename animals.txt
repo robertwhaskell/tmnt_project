@@ -22,3 +22,5 @@ Zoo
 1 30 Lion
 31 65 Tiger
 66 100 Leopard
+
+IQ ME MA PS PP PE PB SPD

@@ -52,12 +52,12 @@ Quick_Run 20
 Advanced_Touch 5
 Advanced_Vision 5
 Advanced_Hearing 5
-Advance_Smell 15
+Advanced_Smell 15
 Prehensile_Tail1 5
 Prehensile_Tail2 10
 Prehensile_Feet 15
 Prehensile_Trunk 10
-NightVision 5
+Nightvision 5
 Glide 10
 Flight1 10
 Flight2 20

@@ -1,0 +1,13 @@
+a powers file, an animal name file, a skills file (probably truncated),
+a psychic powers file.
+
+the program begins by creating arrays for animal names, skills, and various powers.
+
+the chargen rolls stats first, then the animal. The animal contains information
+regarding size, bioe, and potential powers.
+
+based on the animal, an array is made up of it's skills, then randomized. It's
+put through the ringer. the appropriate bonuses are applied to the base stats.
+
+we can either give the animals stats, or assume a certain amount of stat bonuses
+for characters - ie, warriors get one bonus set, academics another, etc, etc.

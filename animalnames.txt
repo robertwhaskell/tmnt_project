@@ -1,53 +1,53 @@
 Aardvark
 60
 5
-PS2 PP1 PE2
+PS 2 PP 1 PE 2
 Claws2 Digging1 Tunneling1
 Alligator
 40
 9
-PS3 PE1 SPD1
+PS 3 PE 1 SPD 1
 Teeth2 LNA2 MNA2 HNA2 Hold_Breath1 Swim1 Quick_Run
 Ape
 10
 10
-IQ6 ME2 MA3 PS4 PE3
+IQ 6 ME 2  MA 3 PS 4 PE 3
 Advanced_Touch Prehensile_Feet
 Armadillo
 60
 5
-PS2 PE3
+PS 2 PE 3
 Claws1 Digging1 LNA1 MNA1 HNA1
 Baboon
 35
 6
-IQ4 ME2 MA3 PS3 PP2
+IQ 4 ME 2 MA 3 PS 3 PP 2
 Teeth2 Advanced_Vision Prehensile_Feet
 Badger
 65
 4
-PS3 PP1 PE4
+PS 3 PP 1 PE 4
 Bite1 Claws3 Digging1 Tunneling1 Nightvision
 Bat
 70
 1
-IQ1 ME1 MA1 SPD2
+IQ 1 ME 1 MA 1 SPD 2
 Teeth1 Glide Flight2 Sonar
 Beaver
 40
 6
-IQ5 ME1 PS3 PE1
+IQ 5 ME 1 PS 3 PE 1
 Teeth1 Chop_Wood Advanced_Hearing Hold_Breath1
 Bear
 5
 16
-PS6 PP1 PE4
-Bite1 Bite2 Claws3 Claws4 Advanced_Hearing Advanced_Smell
+PS 6 PP 1 PE 4
+Bite2 Claws3 Claws4 Advanced_Hearing Advanced_Smell
 Boar
 30
 11
-PS2 PP1 PE1 SPD1
-Tusks1 Tusks2 Advanced_Smell
+PS 2 PP 1 PE 1 SPD 1
+Tusks2 Advanced_Smell
 Buffalo
 0
 19
@@ -56,22 +56,22 @@ Horns2 Advanced_Hearing Buffalo_Armour
 Bull
 0
 16
-PS2 SPD2
+PS 2 SPD 2
 Horns4 Bull_Armour
 Camel
 0
 18
-PS1 PE4
+PS 1 PE 4
 Teeth2 Spit Water_Storage
 Cat
 70
 3
-ME2 PP3
-Teeth2 Retractable_Claws2 Retractable_Claws3 Nightvision
+ME 2 PP 3
+Teeth2 Retractable_Claws3 Nightvision
 Cheetah
 40
 8
-PP1 SPD10
+PP 1 SPD 10
 Claws2 Heightened_Speed
 Chicken
 65
@@ -81,17 +81,17 @@ Glide Ultra_Violet_Vision
 Crow
 65
 4
-IQ3 ME2
+IQ 3 ME 2
 Glide Flight2
 Deer
 20
 13
-PS1 PE1 SPD3
-Horns1 Horns3 Advanced_Hearing
+PS 1 PE 1 SPD 3
+Horns3 Advanced_Hearing
 Dog
 60
 6
-IQ2 ME1 PP1
+IQ 2 ME 1 PP 1
 Teeth1 Claws1 Advanced_Smell
 Duck
 75
@@ -101,27 +101,27 @@ Glide Flight2 Float_On_Water
 Elephant
 0
 20
-PS2 SPD3
+PS 2 SPD 3
 Tusks2 Prehensile_Trunk Advanced_Hearing Elephant_Armour
 Elk
 0
 18
-PP1 PS2
+PP 1 PS 2
 Horns2 Advanced_Smell
 Fox
 60
 3
-IQ2 ME8 SPD3
-Teeth1 Teeth2 Advanced_Hearing Advanced_Smell
+IQ 2 ME 8 SPD 3
+Teeth2 Advanced_Hearing Advanced_Smell
 Frog
 80
 2
-PP1 SPD2
+PP 1 SPD 2
 Nightvision Leaping Swim2 Hold_Breath1
 Goat
 55
 6
-IQ2 PE4 SPD1
+IQ 2 PE 4 SPD 1
 Horns2 Advanced_Hearing Toxic_Resistance
 Hippopotamus
 0
@@ -131,12 +131,12 @@ Teeth3 LNA4 Advanced_Hearing Hold_Breath1
 Horse
 0
 18
-PS2 SPD6
+PS 2 SPD 6
 Advanced_Hearing Pig_Armour
 Marten
 70
 2
-IQ2 ME1 PP2 SPD5
+IQ 2 ME 1 PP 2 SPD 5
 Claws2 Teeth2 Advanced_Hearing Advanced_Smell
 Mole
 85
@@ -146,22 +146,22 @@ Claws2 Digging2 Tunneling2 Excavating Advanced_Smell
 Monkey
 45
 4
-IQ3 ME1 MA1 PP2 PE1 SPD2
+IQ 3 ME 1 MA 1 PP 2 PE 1 SPD 2
 Prehensile_Tail2 Prehensile_Feet
 Moose
 0
 19
-PS4 PE1
+PS 4 PE 1
 Horns3 Advanced_Hearing
 Mountain Lion
 40
 9
-PP3 SPD2
+PP 3 SPD 2
 Retractable_Claws3 Nightvision Advanced_Hearing Advanced_Smell
 Muskrat
 70
 2
-PS4 PE1
+PS 4 PE 1
 Horns3 Advanced_Hearing
 Opossum
 70
@@ -171,12 +171,12 @@ Claws1 Play_Dead Prehensile_Tail1 Advanced_Smell
 Otter
 50
 4
-IQ3 ME2 MA3 PP4 SPD3
+IQ 3 ME 2 MA 3 PP 4 SPD 3
 Advanced_Smell Advanced_Hearing Advanced_Touch Hold_Breath1
 Owl
 60
 4
-PP4 SPD1
+PP 4 SPD 1
 Claws4 Nightvision Advanced_Vision Advanced_Hearing Glide Flight1
 Parrot
 65
@@ -186,7 +186,7 @@ Claws2 Glide Flight2 Advanced_Vision
 Pig
 25
 12
-IQ3 ME1 MA1
+IQ 3 ME 1 MA 1
 Advanced_Hearing Pig_Armour
 Pigeon
 70
@@ -201,22 +201,22 @@ Claws2 Quill_Defense Advanced_Smell Advanced_Hearing
 Rabbit
 70
 3
-PP1 SPD4
+PP 1 SPD 4
 Leaping Advanced_Hearing Advanced_Smell
 Raccoon
 55
 4
-IQ4 ME2 MA2 PP1
+IQ 4 ME 2 MA 2 PP 1
 Advanced_Touch Advanced_Hearing
 Rhinoceros
 0
 20
-PS4 SPD4
-Horns2 Horns3 LNA4 MNA4 HNA4 Advanced_Hearing Advanced_Smell
+PS 4 SPD 4
+Horns3 LNA4 MNA4 HNA4 Advanced_Hearing Advanced_Smell
 Rodent
 80
 1
-IQ2 ME1 PP1
+IQ 2 ME 1 PP 1
 Claws2 Teeth1 Digging1 Advanced_Hearing
 Sheep
 60
@@ -231,12 +231,12 @@ Stink_Spray
 Sparrow
 70
 1
-SPD5
+SPD 5
 Glide Flight2 Advanced_Vision
 Squirrel
 80
 1
-PP1 SPD4
+PP 1 SPD 4
 Claws1 Glide Advanced_Hearing
 Turtle
 95
@@ -246,11 +246,11 @@ LNA2 MNA2 HNA3 EHNA2 Hold_Breath1 Swim1
 Weasel
 75
 1
-PP9 SPD7
+PP 9 SPD 7
 Claws2 Teeth2 Increased_Metabolic_Rate Advanced_Smell
 Wolverine
 50
 5
-IQ3 PS2 PP5 PE10
+IQ 3 PS 2 PP 5 PE 10
 Teeth4 Claws3 Digging1 Advanced_Smell
 eof

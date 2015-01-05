@@ -1,0 +1,17 @@
+ELLIS VALDEZ
+Male Rabbit
+
+
+HP = 14
+SDC = 54
+Punch/Fall = 2
+Parry/Dodge = 0
+
+IQ = 12
+ME = 17
+MA = 10
+PS = 13
+PP = 12
+PE = 13
+PB = 9
+SPD = 15

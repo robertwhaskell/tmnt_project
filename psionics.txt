@@ -1,0 +1,10 @@
+Animal_Control 10
+Animal_Speech 5
+Bio_Manipulation 20
+Detect_Psionics 10
+Hypnotic_Suggestion 15
+Mind_Trap 25
+Mind_Block 15
+See_Aura 15
+Sixth_Sense 10
+Telepathic_Transmission 5

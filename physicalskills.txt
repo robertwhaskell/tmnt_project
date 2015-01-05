@@ -1,0 +1,18 @@
+Acrobatics
+Punch/Fall 2 PS 1 PP 1d4 PE 1 SDC 1
+Athletics
+Parry/Dodge 1 Punch/Fall 1 PS 1 SPD 1d4 SDC 1d8
+Body_Building
+PS 2 SDC 10
+Boxing
+Parry/Dodge 2 Punch/Fall 2 PS 1d4 SDC 3d6
+Climbing
+PS 1 PE 1 SDC 1d6
+Gymnastics
+Punch/Fall 3 PS 2 PP 1d4 PE 1 SDC 3d6
+Running
+PE 1 SPD 4d4 SDC 1d6
+SCUBA
+PS 1 PE 1 SPD 3d4 SDC 1d6
+Wrestling
+Punch/Fall 2 PS 2 PE 1 SDC 4d6

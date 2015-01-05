@@ -74,3 +74,11 @@ Play_Dead 5
 Quill_Defense 15 AR10 SDC0
 Stink_Spray 15
 Increased_Metabolic_Rate 20
+hands_partial 5
+hands_full 10
+bipedal_partial 5
+bipedal_full 10
+looks_partial 5
+looks_full 10
+size_up 5
+size_down -5

@@ -231,6 +231,8 @@ def generate():
     if animal.stats['SPD'] <= 7:
       new_character.write('Slow ')
     new_character.write("\n")
+    new_character.write("SL = " + str(animal.sl) + ", " + AnimalPowers.Return_SL_Description(animal.sl))
+    new_character.write("\n")
     new_character.write("\n")
     new_character.write("HP = " + str(animal.stats["HP"]) + "\n")
     new_character.write("SDC = " + str(animal.stats["SDC"]) + "\n")
@@ -245,7 +247,24 @@ def generate():
     new_character.write("PE = " + str(animal.stats["PE"]) + "\n")
     new_character.write("PB = " + str(animal.stats["PB"]) + "\n")
     new_character.write("SPD = " + str(animal.stats["SPD"]) + "\n")
+    new_character.write("\n")
 
+    power_string = "powers: ";
+    for power in animal.powers:
+      power_string += (power.name + ", ")
+    
+    if power_string == "powers: ":
+      power_string += "none"
+
+    new_character.write(power_string)
+    
+  
+
+
+
+    for filename in os.listdir("."):
+        if filename == "NewCharacter.txt":
+            os.rename(filename, firstname + lastname)
 
 
 

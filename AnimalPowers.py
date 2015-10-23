@@ -137,3 +137,27 @@ class Animal(object):
     self.bonuses = bonuses
     self.powers = powers
 
+def Return_SL_Description (sl):
+  sl_ref = {
+    1 : "1 lb, very tiny",
+    2 : "5 lb, tiny",
+    3 : "10 lb, very small",
+    4 : "20 lb, very small",
+    5 : "40 lb, small",
+    6 : "75 lb, small",
+    7 : "100 lb, small to medium",
+    8 : "150 lb, small to medium",
+    9 : "175 lb, medium",
+    10 : "200 lb, medium",
+    11 : "250 lb, medium to large",
+    12 : "300 lb, medium to large",
+    13 : "350 lb, large",
+    14 : "400 lb, large",
+    15 : "500 lb, very large",
+    16 : "600 lb, very large",
+    17 : "800 lb, extremely large",
+    18 : "1000 lb, extremely large",
+    19 : "1500 lb, huge",
+    20 : "2500 lb, extremely huge",
+  }
+  return sl_ref[sl]
